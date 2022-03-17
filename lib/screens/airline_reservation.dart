@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:soft_project/screens/booking.dart';
+import 'package:soft_project/screens/login.dart';
 class AirlineReservation  extends StatefulWidget {
   const AirlineReservation({Key? key}) : super(key: key);
   @override
@@ -18,12 +19,19 @@ class _AirlineReservationState extends State<AirlineReservation> {
       return const Booking();
     }));
   }
-   Widget textField( text,color,fun){
+
+  logout(BuildContext ctx){
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_){
+      return const Login();
+    }));
+  }
+
+   Widget ScreenButton( text,color,fun){
    return Padding(
       padding: const EdgeInsets.only(left: 70,right: 70),
       child: Container(
           height: 40,
-          width: 10,
+          width: 200,
           decoration: BoxDecoration(
               color: c,
               borderRadius: const BorderRadius.all(Radius.circular(10))
@@ -38,24 +46,28 @@ class _AirlineReservationState extends State<AirlineReservation> {
     return Scaffold(
       appBar: AppBar(title: const Text('AirlineReservation',style: TextStyle(color:Colors.white ),),
       backgroundColor: cb,),
-      body: Center(
-        child: ListView(
-          children: [
-            const SizedBox(height:20,),
-            textField('Book Ticket',c,()=>gotoBooking),
-            const SizedBox(height:30,),
-            textField('Check Flight',c,()=>gotoFlight),
-            const SizedBox(height:100,),
-            Padding(
-              padding: const EdgeInsets.only(left: 70,right: 70),
-              child: Container(
-                  color: cb,
-                  height: 40,
-                  width: 10,
-                  child: TextButton(onPressed:()=>{}, child:const Text('Logout',style: TextStyle(color:Colors.white),),
-                  )),
-            ),
-          ],
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              const SizedBox(height:20,),
+              ScreenButton('Book Ticket',c,()=>gotoBooking(context)),
+              const SizedBox(height:30,),
+              ScreenButton('Check Flight',c,()=>gotoFlight(context)),
+              const SizedBox(height:100,),
+              Padding(
+                padding: const EdgeInsets.only(left: 70,right: 70),
+                child: Container(
+                    color: cb,
+                    height: 40,
+                    width: 100,
+                    child: TextButton(onPressed:()=>logout(context), child:const Text('Logout',style: TextStyle(color:Colors.white),),
+                    )),
+              ),
+            ],
+          ),
         ),
       ),
     );
