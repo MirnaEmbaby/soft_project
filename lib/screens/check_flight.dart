@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:soft_project/widgets/screen_textfield.dart';
 
+// ignore: must_be_immutable
 class CheckFlight extends StatelessWidget {
   CheckFlight({Key? key}) : super(key: key);
   Color? cb = const Color.fromRGBO(61, 103, 107, 1);

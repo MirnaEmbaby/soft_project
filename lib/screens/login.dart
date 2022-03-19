@@ -37,11 +37,11 @@ class _LoginState extends State<Login> {
                 Image.asset(
                   "images/sw.png",
                   width: 300,
-                  height: 170,
+                  height: 150,
                   fit: BoxFit.fill,
                 ),
                 const SizedBox(
-                  height: 50,
+                  height: 70,
                 ),
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20),

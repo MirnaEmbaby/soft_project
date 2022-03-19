@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:soft_project/widgets/screen_textfield.dart';
 
+// ignore: must_be_immutable
 class PersonalInfo extends StatelessWidget {
   PersonalInfo({Key? key}) : super(key: key);
   Color? cb = const Color.fromRGBO(61, 103, 107, 1);

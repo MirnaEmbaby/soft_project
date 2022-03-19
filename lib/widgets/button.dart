@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class Buttons extends StatelessWidget {
   Color? cb = const Color.fromRGBO(61, 103, 107, 1);
   final String? text;
   final Function? navigationFun;
-  Buttons(this.text, this.navigationFun(BuildContext ctx));
+  Buttons(this.text, this.navigationFun(BuildContext ctx), {Key? key})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Padding(

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class ScreenTextField extends StatelessWidget {
   final String? labelText;
 
+  // ignore: use_key_in_widget_constructors
   const ScreenTextField(this.labelText);
 
   @override

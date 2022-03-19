@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'booking.dart';
 import 'ticket_info.dart';
 
+// ignore: must_be_immutable
 class AvailableFlight extends StatelessWidget {
   AvailableFlight({Key? key}) : super(key: key);
   Color? c = const Color.fromRGBO(196, 230, 251, 1);

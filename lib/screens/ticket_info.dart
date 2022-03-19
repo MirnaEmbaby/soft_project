@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'personal_info.dart';
 
+// ignore: must_be_immutable
 class TicketInfo extends StatelessWidget {
   TicketInfo({Key? key}) : super(key: key);
   Color? cb = const Color.fromRGBO(61, 103, 107, 1);

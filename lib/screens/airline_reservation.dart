@@ -31,7 +31,8 @@ class _AirlineReservationState extends State<AirlineReservation> {
     }));
   }
 
-  Widget ScreenButton(text, color, fun) {
+  // ignore: non_constant_identifier_names
+  Widget screen_button(text, color, fun) {
     return Padding(
       padding: const EdgeInsets.only(left: 30, right: 30),
       child: Container(
@@ -69,11 +70,11 @@ class _AirlineReservationState extends State<AirlineReservation> {
               const SizedBox(
                 height: 20,
               ),
-              ScreenButton('Book Ticket', c, () => gotoBooking(context)),
+              screen_button('Book Ticket', c, () => gotoBooking(context)),
               const SizedBox(
                 height: 30,
               ),
-              ScreenButton('Check Flight', c, () => gotoFlight(context)),
+              screen_button('Check Flight', c, () => gotoFlight(context)),
               const SizedBox(
                 height: 100,
               ),

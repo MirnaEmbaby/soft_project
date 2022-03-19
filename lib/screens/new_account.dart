@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:soft_project/widgets/screen_textfield.dart';
 
+// ignore: must_be_immutable
 class NewAccount extends StatelessWidget {
   NewAccount({Key? key}) : super(key: key);
   Color? c = const Color.fromRGBO(196, 230, 251, 1);
