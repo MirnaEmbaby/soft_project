@@ -25,34 +25,43 @@ class _BookingState extends State<Booking> {
       body: Padding(
         padding: const EdgeInsets.all(15.0),
         child: ListView(
-          children: const [
-            ScreenTextField("Departure airport"),
+          children:  [
+            const ScreenTextField("Departure airport"),
+            const SizedBox(
+              height: 15,
+            ),
+            const ScreenTextField("Arrival airport"),
+            const SizedBox(
+              height: 15,
+            ),
+            const ScreenTextField("Departure date"),
+            const SizedBox(
+              height: 15,
+            ),
+            const ScreenTextField("Return date"),
             SizedBox(
               height: 15,
             ),
-            ScreenTextField("Arrival airport"),
-            SizedBox(
-              height: 15,
-            ),
-            ScreenTextField("Departure date"),
-            SizedBox(
-              height: 15,
-            ),
-            ScreenTextField("Return date"),
-            SizedBox(
-              height: 15,
-            ),
-            ScreenTextField("Number of travellers"),
-            SizedBox(
+            const ScreenTextField("Number of travellers"),
+            const SizedBox(
               height: 15,
             ),
             ScreenTextField("Class"),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
-            ScreenTextField("Payment method"),
-            SizedBox(
+            const ScreenTextField("Payment method"),
+            const SizedBox(
               height: 50,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 70,right: 70),
+              child: Container(
+                  color: cb,
+                  height: 40,
+                  width: 100,
+                  child: TextButton(onPressed:(){}, child: const Text('Login',style: TextStyle(color:Colors.white),),
+                  )),
             ),
 
           ],
