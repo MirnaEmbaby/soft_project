@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:soft_project/screens/booking.dart';
 import 'package:soft_project/screens/login.dart';
+
+import 'check_flight.dart';
 class AirlineReservation  extends StatefulWidget {
   const AirlineReservation({Key? key}) : super(key: key);
   @override
@@ -16,7 +18,7 @@ class _AirlineReservationState extends State<AirlineReservation> {
   }
   gotoFlight(BuildContext ctx){
     Navigator.of(ctx).push(MaterialPageRoute(builder: (_){
-      return const Booking();
+      return  CheckFlight();
     }));
   }
 
