@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'booking.dart';
+import 'ticket_info.dart';
 class AvailableFlight extends StatelessWidget {
    AvailableFlight({Key? key}) : super(key: key);
   Color? c = const Color.fromRGBO(196, 230, 251, 1);
@@ -50,11 +51,16 @@ class AvailableFlight extends StatelessWidget {
           padding: const EdgeInsets.all(10.0),
           child: Column(
             children: [
-              card('Tuesday,24 oct.22','Cairo -> kuwait','Price:9000 EGP',context),
+              InkWell(child: card('Tuesday,24 oct.22','Cairo -> kuwait','Price:9000 EGP',context),
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) {
+                      return  TicketInfo();
+                    }));
+              }),
               card('Monday,3 sep.22','Cairo -> dubai','Price:7000 EGP',context),
               card('Sunday,14 mar.22','paris -> cairo','Price:70000 EGP',context),
               card('Monday,3 sep.22','Cairo -> london','Price:50000 EGP',context),
-
      ] ),
         ),
     )

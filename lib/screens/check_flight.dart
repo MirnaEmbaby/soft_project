@@ -18,6 +18,8 @@ class CheckFlight extends StatelessWidget{
              const ScreenTextField('Enter ticket ID'),
              const SizedBox(height: 30,),
              Container(
+               height: 400,
+               width: 300,
                decoration: BoxDecoration(
                  color: c,
                    borderRadius: const BorderRadius.all(Radius.circular(30)),
@@ -34,7 +36,7 @@ class CheckFlight extends StatelessWidget{
                      Text('SSN:8686866439'),
                      Text('PN:4678825889'),
                      Text('Age:21'),
-                     SizedBox(height: 10,),
+                     SizedBox(height: 50,),
                      Text('Flight Info :',style: TextStyle(fontWeight: FontWeight.bold,fontSize:25)),
                      Text('Flight ID :12345'),
                      Text('Departure date : 24 oct, 22'),

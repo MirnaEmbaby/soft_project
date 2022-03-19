@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
+import 'package:soft_project/screens/new_account.dart';
 import 'package:soft_project/widgets/screen_textfield.dart';
 import 'airline_reservation.dart';
 class Login extends StatefulWidget {
@@ -52,7 +53,11 @@ class _LoginState extends State<Login> {
                       )),
                 ),
                 const SizedBox(height:15,),
-                const Center(child: Text('Create new account',style: TextStyle(decoration: TextDecoration.underline,color: Colors.blue ),)),
+                InkWell(child: const Center(child: Text('Create new account',style: TextStyle(decoration: TextDecoration.underline,color: Colors.blue ),))
+                ,onTap: (){Navigator.of(context).push(MaterialPageRoute(builder: (_){
+                    return NewAccount();
+                  }));},
+                ),
 
               ],
             ),
