@@ -7,17 +7,16 @@ import 'package:soft_project/widgets/screen_textfield.dart';
 import 'airline_reservation.dart';
 
 class Login extends StatefulWidget {
-  const Login({Key? key}) : super(key: key);
 
   @override
   _LoginState createState() => _LoginState();
 }
 
-Color? c = const Color.fromRGBO(196, 230, 251, 1);
-Color? cb = const Color.fromRGBO(61, 103, 107, 1);
+Color c = const Color.fromRGBO(196, 230, 251, 1);
+Color cb = const Color.fromRGBO(61, 103, 107, 1);
 gotoAirlineReservation(BuildContext ctx) {
   Navigator.of(ctx).pushReplacement(MaterialPageRoute(builder: (_) {
-    return const AirlineReservation();
+    return AirlineReservation();
   }));
 }
 

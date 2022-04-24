@@ -5,9 +5,9 @@ import 'ticket_info.dart';
 
 // ignore: must_be_immutable
 class AvailableFlight extends StatelessWidget {
-  AvailableFlight({Key? key}) : super(key: key);
-  Color? c = const Color.fromRGBO(196, 230, 251, 1);
-  Color? cb = const Color.fromRGBO(61, 103, 107, 1);
+  Color c = const Color.fromRGBO(196, 230, 251, 1);
+  Color cb = const Color.fromRGBO(61, 103, 107, 1);
+
   Widget card(text1, text2, text3, ctx) {
     return Card(
         color: c,
@@ -43,7 +43,7 @@ class AvailableFlight extends StatelessWidget {
                         onPressed: () => {
                               Navigator.of(ctx)
                                   .push(MaterialPageRoute(builder: (_) {
-                                return const Booking();
+                                return Booking();
                               })),
                             }))
               ],

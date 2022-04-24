@@ -3,10 +3,9 @@ import 'package:soft_project/widgets/screen_textfield.dart';
 
 // ignore: must_be_immutable
 class PersonalInfo extends StatelessWidget {
-  PersonalInfo({Key? key}) : super(key: key);
-  Color? cb = const Color.fromRGBO(61, 103, 107, 1);
+  Color cb = const Color.fromRGBO(61, 103, 107, 1);
   Widget miniTextfield() {
-    return const SizedBox(
+    return  SizedBox(
       height: 30,
       width: 30,
       child: TextField(

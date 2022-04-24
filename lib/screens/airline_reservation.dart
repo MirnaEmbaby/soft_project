@@ -5,17 +5,16 @@ import 'package:soft_project/screens/login.dart';
 import 'check_flight.dart';
 
 class AirlineReservation extends StatefulWidget {
-  const AirlineReservation({Key? key}) : super(key: key);
   @override
   State<AirlineReservation> createState() => _AirlineReservationState();
 }
 
 class _AirlineReservationState extends State<AirlineReservation> {
-  Color? c = const Color.fromRGBO(196, 230, 251, 1);
-  Color? cb = const Color.fromRGBO(61, 103, 107, 1);
+  Color c = const Color.fromRGBO(196, 230, 251, 1);
+  Color cb = const Color.fromRGBO(61, 103, 107, 1);
   gotoBooking(BuildContext ctx) {
     Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
-      return const Booking();
+      return Booking();
     }));
   }
 
@@ -27,7 +26,7 @@ class _AirlineReservationState extends State<AirlineReservation> {
 
   logout(BuildContext ctx) {
     Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
-      return const Login();
+      return Login();
     }));
   }
 

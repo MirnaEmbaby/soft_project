@@ -4,9 +4,8 @@ import 'package:soft_project/widgets/screen_textfield.dart';
 
 // ignore: must_be_immutable
 class CheckFlight extends StatelessWidget {
-  CheckFlight({Key? key}) : super(key: key);
-  Color? cb = const Color.fromRGBO(61, 103, 107, 1);
-  Color? c = const Color.fromRGBO(196, 230, 251, 1);
+  Color cb = const Color.fromRGBO(61, 103, 107, 1);
+  Color c = const Color.fromRGBO(196, 230, 251, 1);
   @override
   Widget build(BuildContext context) {
     return Scaffold(

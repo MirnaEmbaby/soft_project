@@ -4,9 +4,8 @@ import 'personal_info.dart';
 
 // ignore: must_be_immutable
 class TicketInfo extends StatelessWidget {
-  TicketInfo({Key? key}) : super(key: key);
-  Color? cb = const Color.fromRGBO(61, 103, 107, 1);
-  Color? c = const Color.fromRGBO(196, 230, 251, 1);
+  Color cb = const Color.fromRGBO(61, 103, 107, 1);
+  Color c = const Color.fromRGBO(196, 230, 251, 1);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
